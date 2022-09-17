@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title><%= pageTitle %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <header class="main_header">
+      <nav class="main_header_nav">
+        <ul class="main_header_nav_list">
+          <li class="nav_list_links">
+            <a class="anchor_link" href="/">Home</a>
+          </li>
+          <li class="nav_list_links">
+            <a class="anchor_link" href="/admin">Add an Employee</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="main_container">
+      <div class="main_wrapper">
+        <h1>Add an Employee to Database !</h1>
+        <form class="formcontrol" action="/admin/addEmployee" method="post">
+          <div class="formitem">
+            <label class="lableclass" for="name">Name : </label>
+            <input class="inputclass" id="name" name="name" required />
+          </div>
+          <div class="formitem">
+            <label class="lableclass" for="email">Email : </label>
+            <input class="inputclass" id="email" name="email" required />
+          </div>
+          <div class="formitem">
+            <label class="lableclass" for="mobno">Mobile Number : </label>
+            <input class="inputclass" id="mobno" name="mobilenumber" required />
+          </div>
+          <div class="formitem">
+            <label class="lableclass" for="age">Age : </label>
+            <input class="inputclass" id="age" name="age" required />
+          </div>
+          <div class="formitem">
+            <label class="lableclass" for="place">Place : </label>
+            <input class="inputclass" id="place" name="place" required />
+          </div>
+          <div class="formitem">
+            <label class="lableclass" for="skill">Primary Skill : </label>
+            <input class="inputclass" id="skill" name="skill" required />
+          </div>
+          <div class="formitem">
+            <label class="lableclass" for="dept">Department : </label>
+            <input class="inputclass" id="dept" name="department" required />
+          </div>
+          <div class="formitem">
+            <label class="lableclass" for="salary">Salary : </label>
+            <input class="inputclass" id="salary" name="salary" required />
+          </div>
+          <div class="formitem">
+            <input class="submitbuttonclass" type="submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
